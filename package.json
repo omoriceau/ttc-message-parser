@@ -1,8 +1,9 @@
 {
   "name": "ttc-alert-parser",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Parses TTC service alerts from API and text sources.",
   "main": "index.js",
+  "types": "index.d.ts",
   "type": "module",
   "exports": {
     ".": "./index.js",
@@ -15,6 +16,7 @@
   "files": [
     "src/",
     "index.js",
+    "index.d.ts",
     "README.MD"
   ],
   "scripts": {
