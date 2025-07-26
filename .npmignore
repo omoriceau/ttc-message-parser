@@ -1,0 +1,12 @@
+example/
+.git/
+.gitignore
+*.log
+node_modules/
+.DS_Store
+.vscode/
+.idea/
+*.tmp
+*.temp
+coverage/
+.nyc_output/

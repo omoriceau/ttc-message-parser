@@ -1,0 +1,57 @@
+{
+  "name": "ttc-alert-parser",
+  "version": "1.0.0",
+  "description": "Parses TTC service alerts from API and text sources.",
+  "main": "index.js",
+  "type": "module",
+  "exports": {
+    ".": "./index.js",
+    "./formatters": "./src/formatters.js",
+    "./text-parser": "./src/text-parser.js",
+    "./api-parser": "./src/api-parser.js",
+    "./ttc-parser": "./src/ttc-parser.js",
+    "./utils": "./src/utils.js"
+  },
+  "files": [
+    "src/",
+    "index.js",
+    "README.MD"
+  ],
+  "scripts": {
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:coverage": "vitest run --coverage",
+    "test:install": "node test-install.js",
+    "test:all": "npm run test && npm run test:install",
+    "example": "node example/example-usage.js",
+    "demo": "node example/example-usage.js",
+    "prepublishOnly": "npm run test:all"
+  },
+  "keywords": [
+    "ttc",
+    "transit",
+    "parser",
+    "alerts",
+    "toronto",
+    "public-transport",
+    "api"
+  ],
+  "author": "clipclop",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/[username]/ttc-alert-parser.git"
+  },
+  "bugs": {
+    "url": "https://github.com/[username]/ttc-alert-parser/issues"
+  },
+  "homepage": "https://github.com/[username]/ttc-alert-parser#readme",
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "devDependencies": {
+    "@vitest/coverage-v8": "^3.2.4",
+    "vite": "^7.0.6",
+    "vitest": "^3.2.4"
+  }
+}
